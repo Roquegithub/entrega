@@ -1,0 +1,75 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Formulario de Contacto</title>
+    <!--Link Gooogle fonts-->
+    <link href="https://fonts.googleapis.com/css2?family=Quicksand&display=swap" rel="stylesheet">
+    <!--Link Animated CSS-->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/animate.css/4.0.0/animate.min.css" />
+    <!--Link Font awesome-->
+    <script src="https://kit.fontawesome.com/4097bffce9.js" crossorigin="anonymous"></script>
+    <!--Link Estilos CSS-->
+    <link rel="stylesheet" href="CSS/formulario.css">
+    <link rel="icon" href="pacman.ico">
+</head>
+
+<body>
+    <div class="contenido">
+        <h1 class="logo"><a href="index.html">Retro<span>Juegos</span></a></h1> 
+        <div class="contact-wrapper">
+            <div class="contact-form">
+                <h3>Contactenos</h3>
+                <form action="https://formspree.io/f/mzzbpovg" method="post">
+                    <p>
+                        <label for="fullname">Nombre</label>
+                        <input placeholder="Ingrese su nombre" type="text" name="fullname" id="fullname">
+                    </p>
+                    <p>
+                        <label>Email</label>
+                        <input placeholder="Ingrese su E-mail" type="email" name="email">
+                    </p>
+                    <p>
+                        <label>Telefono</label>
+                        <input placeholder="Ingrese su Telefono" type="tel" name="phone">
+                    </p>
+                    <p>
+                        <label>Asunto</label>
+                        <input placeholder="Breve descripcion"type="text" name="affair">
+                    </p>
+                    <p class="block">
+                        <label>Mensaje</label>
+                        <textarea placeholder="Ingrese su mensaje" name="message" rows="3"></textarea>
+                    </p>
+                    <p class="block">
+                        <button type="submit">
+                            Enviar
+                        </button>
+                    </p>
+
+                </form>
+            </div>
+            <div class="contact-info">
+                <h4>Nuestra Ubicacion</h4>
+                <ul>
+                    <li><i class="fas fa-map-marker-alt"></i> Buenos Aires - Argentina</li>
+                    <li><i class="fas fa-phone"></i> +54 9 11 4047-4055</li>
+                    <li><i class="fas fa-envelope-open-text"></i> rodrigo.calarame@gmail.com</li>
+                </ul>
+                <section id="ubicacion">
+                    <div class="maps_container">
+                    <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3283.0348987160646!2d-58.359536419311794!3d-34.62855836490955!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x95a334c73fe3e107%3A0xeae5d0a098ae5c1!2sUsina%20del%20Arte!5e0!3m2!1sen!2sar!4v1731192021207!5m2!1sen!2sar" width="auto" height="300" style="border:0;" allowfullscreen="" loading="lazy" referrerpolicy="no-referrer-when-downgrade"></iframe>
+                    </div>
+                </section>
+                <a href="index.html">Retrojuegos.com</a> 
+
+            </div>
+        </div>
+
+    </div>
+
+</body>
+
+</html>

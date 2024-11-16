@@ -1,0 +1,124 @@
+* {
+    box-sizing: border-box;
+}
+
+body {
+    background: #000000;
+    background-image: url("data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' width='80' height='105' viewBox='0 0 80 105'%3E%3Cg fill-rule='evenodd'%3E%3Cg id='death-star' fill='%23540606' fill-opacity='0.2'%3E%3Cpath d='M20 10a5 5 0 0 1 10 0v50a5 5 0 0 1-10 0V10zm15 35a5 5 0 0 1 10 0v50a5 5 0 0 1-10 0V45zM20 75a5 5 0 0 1 10 0v20a5 5 0 0 1-10 0V75zm30-65a5 5 0 0 1 10 0v50a5 5 0 0 1-10 0V10zm0 65a5 5 0 0 1 10 0v20a5 5 0 0 1-10 0V75zM35 10a5 5 0 0 1 10 0v20a5 5 0 0 1-10 0V10zM5 45a5 5 0 0 1 10 0v50a5 5 0 0 1-10 0V45zm0-35a5 5 0 0 1 10 0v20a5 5 0 0 1-10 0V10zm60 35a5 5 0 0 1 10 0v50a5 5 0 0 1-10 0V45zm0-35a5 5 0 0 1 10 0v20a5 5 0 0 1-10 0V10z' /%3E%3C/g%3E%3C/g%3E%3C/svg%3E");
+    color: greenyellow;
+    font-family: 'Oswald', sans-serif;
+    padding:  1.5rem;
+   
+}
+
+.contenido {
+    max-width: 1170px;
+    margin-left: auto;
+    margin-right: auto;
+    padding: 1.5em;
+}
+
+.logo {
+    text-align: center;
+    font-size: 3em;
+}
+
+.logo span {
+    color: #b70e21;
+}
+
+.contact-wrapper {
+    box-shadow: 0 0 20px 0 rgba(255, 255, 255, .3);
+}
+
+a{
+    color: greenyellow;
+}
+
+.contact-form {
+    background: #222222;
+}
+
+.contact-form form {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+}
+
+.contact-form form .block {
+    grid-column: 1/3;
+}
+
+.contact-form form p {
+    margin: 0;
+    padding: 1em;
+}
+
+.contact-form form button,
+.contact-form form input,
+.contact-form form textarea {
+    width: 100%;
+    padding: .7em;
+    border: none;
+    background: none;
+    outline: 0;
+    color: greenyellow;
+    border-bottom: 1px solid #d63031;
+}
+
+.contact-form form button {
+    background: #b70e21;
+    border: 0;
+    color: black;
+    text-transform: uppercase;
+    padding: 1em;
+}
+
+.contact-form form button:hover,
+.contact-form form button:focus {
+    background: #d63031;
+    color: #fff;
+    transition: background-color 1s ease-out;
+    outline: 0;
+}
+
+.contact-info {
+    background: #000;
+}
+
+.contact-info h4,
+.contact-info ul,
+.contact-info p {
+    text-align: center;
+    margin: 0 0 1rem 0;
+}
+
+.contact-info ul {
+    list-style: none;
+    padding: 0;
+}
+
+.contact-info ul li {
+    padding: .3em;
+}
+
+
+/*Large Screen*/
+
+@media (min-width: 750px) {
+    body {
+        padding: 0 4rem;
+    }
+    .contact-wrapper {
+        display: grid;
+        grid-template-columns: 2fr 1fr;
+    }
+    .contact-wrapper>* {
+        padding: 2em;
+    }
+    .contact-info h4,
+    .contact-info ul,
+    .contact-info p {
+        padding: 1em;
+        text-align: left;
+    }
+}
